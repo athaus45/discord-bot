@@ -31,6 +31,16 @@ async def info(ctx):
     embed.add_field(name="Servers", value=len(bot.guilds), inline=True)
     embed.add_field(name="Users", value=len(bot.users), inline=True)
     await ctx.send(embed=embed)
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+    
+    # When User sends any message, bot responds
+    if message.author.id == 905194166819106836:
+        await message.channel.send("Je t'aime Bebou")
+    
+    await bot.process_commands(message)
 
 # Run the bot
 if __name__ == '__main__':
