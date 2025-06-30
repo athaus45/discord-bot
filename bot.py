@@ -38,7 +38,7 @@ async def on_message(message):
     
     # When User sends any message, bot responds
     if message.author.id == 530400547610558514:
-        await message.channel.send("🚨Alerte Possible second degrès !!🚨")
+        await message.channel.send("🚨Alerte Possible second degré !!🚨")
     
     await bot.process_commands(message)
 
