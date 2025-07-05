@@ -194,7 +194,7 @@ class DestinyBuildAnalyzer:
             # This is a simplified structure showing what data we'd expect
             
             # Check if it's a DIM link
-            if "destinyitemmanager.com" not in url:
+            if "dim.gg" not in url:
                 return None
             
             # Simulate parsed build data (in real implementation, this would be extracted from the URL)
